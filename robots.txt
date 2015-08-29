@@ -1,0 +1,12 @@
+---
+---
+Crawl-delay: {{ site.robots.crawldelay }}
+
+{% if site.robots.disallow_all == false %}{% assign disallowed_folders = site.robots.disallow_folders | split:", " %}{% if disallowed_folders != empty %}User-agent: *
+{% for folder in disallowed_folders %}Disallow: /{{ folder }}/
+{% endfor %}{% endif %}
+{% assign disallowed_user_agents = site.robots.disallows_user_agents | split:", " %}{% if disallowed_agents != empty %}{% for agent in disallowed_user_agents %}User-agent: {{ agent }}
+{% endfor %}Disallow: /{% endif %}{% else %}User-agent: *
+Disallow: /{% endif %}{% if site.sitemap.enable == true %}
+
+Sitemap: sitemap.xml{% endif %}

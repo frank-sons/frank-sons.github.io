@@ -1,0 +1,43 @@
+# Handling Reading
+exclude: ["README.md"]
+include: ['_pages']
+
+# Filtering Content
+show_drafts: false
+future     : false
+
+# Conversion
+excerpt_separator: <!--more-->
+
+# Serving
+baseurl: ""
+url    : "http://www.code-quality.de"
+
+# Application
+version: "1.0.0"
+
+# Meta Information
+title      : "Frank Sons - Agile Software &amp; Code Quali&auml;t"
+description: "TODO"
+keywords   : "TODO"
+author     : "Frank Sons"
+
+# Timezone
+timezone: UTC
+
+# Google API keys
+google:
+    analytics: "bla fasel TODO"
+    maps     : ""
+
+
+# Configuration for robots.txt generation
+robots:
+    crawldelay           : 7
+    disallow_all         : false
+    disallow_folders     : "assets, images"
+    disallows_user_agents: "WebReaper, WebCopier, Offline Explorer, HTTrack, Microsoft.URL.Control, EmailCollector, penthesilea"
+
+
+sitemap:
+    enable: true
