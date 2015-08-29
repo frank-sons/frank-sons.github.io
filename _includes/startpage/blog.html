@@ -3,7 +3,7 @@
 
 								<!-- Blog -->
 									<section class="box blog">
-										<h2 class="major"><span>Another Major Heading</span></h2>
+										<h2 class="major"><span>Blog und Termine</span></h2>
 										<div>
 											<div class="row">
 												<div class="9u 12u(mobile)">
@@ -15,7 +15,7 @@
 																<header>
 																	<h3><a href="#">{{ post.title }}</a></h3>
 																</header>
-																<!--<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>-->
+																<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
 																<p>{{ post.excerpt | strip_html | truncate: 1000, '...' }}</p>
 																<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="button">Weiterlesen</a>
 															</article>
@@ -27,54 +27,33 @@
 													<div class="sidebar">
 
 														<!-- Termine -->
+														{% if site.categories.event != empty %}
+															{% capture now %}{{'now' | date: '%s'}}{% endcapture %}
 															<ul class="divided">
+															{% assign sortedEvents = site.categories.event | sort: 'expires' %}
+															{% for post in sortedEvents limit:10 %}
+																{% capture expire %}{{ post.expires | date: '%s'}}{% endcapture %}
+																{% if expire > now %}
 																<li>
 																	<article class="box post-summary">
-																		<h3><a href="#">A Subheading</a></h3>
+																		<h3>
+																		{% if page.link != empty %}
+																			<a href="{{ post.link }}">{{ post.title }}</a>
+																		{% else %}
+																			{{ post.title }}
+																		{% endif %}
+																		</h3>
 																		<ul class="meta">
-																			<li class="icon fa-clock-o">6 hours ago</li>
-																			<li class="icon fa-comments"><a href="#">34</a></li>
+																			<li class="icon fa-calendar">{{ post.eventdate }}</li>
+																			<li class="icon fa-map-marker">{{ post.location }}</li>
 																		</ul>
 																	</article>
 																</li>
-																<li>
-																	<article class="box post-summary">
-																		<h3><a href="#">Another Subheading</a></h3>
-																		<ul class="meta">
-																			<li class="icon fa-clock-o">9 hours ago</li>
-																			<li class="icon fa-comments"><a href="#">27</a></li>
-																		</ul>
-																	</article>
-																</li>
-																<li>
-																	<article class="box post-summary">
-																		<h3><a href="#">And Another</a></h3>
-																		<ul class="meta">
-																			<li class="icon fa-clock-o">Yesterday</li>
-																			<li class="icon fa-comments"><a href="#">184</a></li>
-																		</ul>
-																	</article>
-																</li>
-																<li>
-																	<article class="box post-summary">
-																		<h3><a href="#">And Another</a></h3>
-																		<ul class="meta">
-																			<li class="icon fa-clock-o">2 days ago</li>
-																			<li class="icon fa-comments"><a href="#">286</a></li>
-																		</ul>
-																	</article>
-																</li>
-																<li>
-																	<article class="box post-summary">
-																		<h3><a href="#">And One More</a></h3>
-																		<ul class="meta">
-																			<li class="icon fa-clock-o">3 days ago</li>
-																			<li class="icon fa-comments"><a href="#">8,086</a></li>
-																		</ul>
-																	</article>
-																</li>
+																{% endif %}
+															{% endfor %}
 															</ul>
-															<a href="#" class="button alt">Browse Archives</a>
+															<!--<a href="#" class="button alt">Browse Archives</a>-->
+															{% endif %}
 
 													</div>
 												</div>

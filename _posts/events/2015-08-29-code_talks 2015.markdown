@@ -1,0 +1,19 @@
+---
+layout    : default
+categories: [event, conference]
+date      : 2015-08-29 12:00:00
+expires   : 2015-09-30 20:00:00
+title     : "code.talks 2015"
+eventdate : "29.-30. September 2015"
+location  : "Hamburg"
+link      : https://www.codetalks.de/2015/speaker/frank-sons
+author    : "Frank Sons"
+---
+[1]: mailto:frank.sons@code-quality.de?subject=code%20talks%202015
+[2]: https://www.codetalks.de/
+
+Triff mich in Hamburg auf der [code.talks 2015!][2]
+
+[Melde dich bei mir!][1]
+
+<!--more-->
