@@ -1,5 +1,5 @@
 ---
-layout    : post
+layout    : subpage
 categories: [blog]
 date      : 2014-06-18 14:43:00
 title     : "The value of code quality"

@@ -6,34 +6,99 @@
 										<h2 class="major"><span>Meine Leistungen</span></h2>
 										<div>
 											<div class="row">
-											
+												{% comment %}
 												{% assign sortedServices = site.categories.service | sort: 'title' %}
 												{% for post in sortedServices %}
-												<div class="3u 12u(mobile)">
+												<!--<div class="3u 12u(mobile)">-->
 
 													<!-- Feature -->
-														<section class="box feature">
-															<!--<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>-->
+														<!--<section class="box feature">
 															<ul class="special">
-															<li><a href="#" class="icon fa-{{ post.icon }}"><span class="label">{{ post.title }}</span></a></li>
+															<li>
+																<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="icon fa-{{ post.icon }}">
+																	<span class="label">{{ post.title }}</span>
+																</a>
+															</li>
 															</ul>
-															<h3><a href="#">{{ post.title }}</a></h3>
-															<!--<p>
+															<h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+															<p>
 																{{ post.excerpt | strip_html | truncate: 1000, '...' }}
-															</p>-->
+															</p>
 														</section>
 
-												</div>
+												</div>-->
 												{% endfor %}
-											</div>
-											<!--<div class="row">
-												<div class="12u">
-													<ul class="actions">
-														<li><a href="#" class="button big">Do Something</a></li>
-														<li><a href="#" class="button alt big">Think About It</a></li>
-													</ul>
+												{% endcomment %}
+												
+												<div class="3u 12u(mobile)">
+													<!-- Feature -->
+														<section class="box feature">
+															<ul class="special">
+															<li>
+																<a href="{{ site.url }}{{ site.baseurl }}/services/agile_development/" class="icon fa-code-fork">
+																	<span class="label">Agile Entwicklung</span>
+																</a>
+															</li>
+															</ul>
+															<h3><a href="{{ site.url }}{{ site.baseurl }}/services/agile_development/">Agile Entwicklung</a></h3>
+															<p>
+																<!-- TODO -->
+															</p>
+														</section>
 												</div>
-											</div>-->
+												
+												<div class="3u 12u(mobile)">
+													<!-- Feature -->
+														<section class="box feature">
+															<ul class="special">
+															<li>
+																<a href="{{ site.url }}{{ site.baseurl }}/services/code_quality/" class="icon fa-code">
+																	<span class="label">Code Qualit&auml;t</span>
+																</a>
+															</li>
+															</ul>
+															<h3><a href="{{ site.url }}{{ site.baseurl }}/services/code_quality/">Code Qualit&auml;t</a></h3>
+															<p>
+																<!-- TODO -->
+															</p>
+														</section>
+												</div>
+												
+												<div class="3u 12u(mobile)">
+													<!-- Feature -->
+														<section class="box feature">
+															<ul class="special">
+															<li>
+																<a href="{{ site.url }}{{ site.baseurl }}/services/software_quality/" class="icon fa-check-square-o">
+																	<span class="label">Software Qualit&auml;t</span>
+																</a>
+															</li>
+															</ul>
+															<h3><a href="{{ site.url }}{{ site.baseurl }}/services/software_quality/">Software Qualit&auml;t</a></h3>
+															<p>
+																<!-- TODO -->
+															</p>
+														</section>
+												</div>
+												
+												<div class="3u 12u(mobile)">
+													<!-- Feature -->
+														<section class="box feature">
+															<ul class="special">
+															<li>
+																<a href="{{ site.url }}{{ site.baseurl }}/services/knowledge_transfer/" class="icon fa-comments-o">
+																	<span class="label">Wissensvermittlung</span>
+																</a>
+															</li>
+															</ul>
+															<h3><a href="{{ site.url }}{{ site.baseurl }}/services/knowledge_transfer/">Wissensvermittlung</a></h3>
+															<p>
+																<!-- TODO -->
+															</p>
+														</section>
+												</div>
+												
+											</div>
 										</div>
 									</section>
 

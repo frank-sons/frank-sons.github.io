@@ -1,0 +1,29 @@
+<div class="12u">
+
+<!-- Blog -->
+	<section class="box blog">
+		<h2 class="major"><span>Another Major Heading</span></h2>
+		<div>
+			<div class="row">
+				<div class="12u 12u(mobile)">
+					<div class="content content-left">
+
+						<!-- Featured Post -->
+						{% for post in site.categories.blog %}
+						<article class="box post">
+							<header>
+								<h3><a href="#">{{ post.title }}</a></h3>
+							</header>
+							<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+							<p>{{ post.excerpt | truncate: 1000, '...' }}</p>
+							<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="button">Weiterlesen</a>
+						</article>
+						{% endfor %}
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</div>

@@ -18,8 +18,8 @@ version: "1.0.0"
 
 # Meta Information
 title      : "Frank Sons - Agile Software &amp; Code Quali&auml;t"
-description: "TODO"
-keywords   : "TODO"
+description: "Beratung rund um agile Software &amp; Code Quali&auml;t. Workshops für Code Reviews, Unit Testing und agile Entwicklung"
+keywords   : "agile development, unit testing, code reviews, code quality, software quality, agile entwicklung, code qualit&auml;t, software qualit&auml;t, workshops, beratung, scrum, agile, extreme programming, php, software development, web development, software entwicklung, web entwicklung"
 author     : "Frank Sons"
 
 # Timezone
@@ -27,7 +27,7 @@ timezone: UTC
 
 # Google API keys
 google:
-    analytics: "bla fasel TODO"
+    analytics: "UA-66930429-1"
     maps     : ""
 
 

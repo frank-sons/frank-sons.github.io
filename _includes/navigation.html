@@ -4,11 +4,20 @@
 						<li {% if page.url == '/index.html' %}class="current"{% endif %}>
 							<a href="/index.html">Startseite</a>
 						</li>
-						<!--<li {% if page.url == '/leistungen/' %}class="current"{% endif %}>
-							<a href="{{ site.url }}{{ site.baseurl }}/leistungen/">Leistungen</a>
+						<li {% if page.url == '/blog/' %}class="current"{% endif %}>
+							<a href="{{ site.url }}{{ site.baseurl }}/blog/">Blog</a>
 						</li>
-						<li {% if page.url == '/about-me/' %}class="current"{% endif %}>
-							<a href="{{ site.url }}{{ site.baseurl }}/about-me/">&Uuml;ber mich</a>
+						<!--<li {% if page.url contains '/services/' %}class="current"{% endif %}>
+							<a href="{{ site.url }}{{ site.baseurl }}/services/">Leistungen</a>
+							<ul>
+								<li><a href="{{ site.url }}{{ site.baseurl }}/services/agile_development/">Agile Entwicklung</a></li>
+								<li><a href="{{ site.url }}{{ site.baseurl }}/services/code_quality/">Code Qualit&auml;t</a></li>
+								<li><a href="{{ site.url }}{{ site.baseurl }}/services/software_quality/">Software Qualit&auml;t</a></li>
+								<li><a href="{{ site.url }}{{ site.baseurl }}/services/knowledge_transfer/">Wissensvermittlung</a></li>
+							</ul>
 						</li>-->
+						<li {% if page.url == '/contact/' %}class="current"{% endif %}>
+							<a href="{{ site.url }}{{ site.baseurl }}/contact/">Kontakt</a>
+						</li>
 					</ul>
 				</nav>
