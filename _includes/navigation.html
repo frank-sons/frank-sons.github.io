@@ -4,7 +4,7 @@
 						<li {% if page.url == '/index.html' %}class="current"{% endif %}>
 							<a href="/index.html">Startseite</a>
 						</li>
-						<li {% if page.url == '/blog/' %}class="current"{% endif %}>
+						<li {% if page.url contains '/blog/' %}class="current"{% endif %}>
 							<a href="{{ site.url }}{{ site.baseurl }}/blog/">Blog</a>
 						</li>
 						<li {% if page.url contains '/services/' %}class="current"{% endif %}>
