@@ -5,7 +5,7 @@ date      : 2014-06-18 14:43:00
 title     : "The value of code quality"
 author    : "Frank Sons"
 ---
-[1]: http://blog.innogames.com/
+[1]: https://blog.innogames.com/author/frank
 [2]: http://c2.com/cgi/wiki?CodeForTheMaintainer
 
 
