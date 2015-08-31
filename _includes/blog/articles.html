@@ -2,7 +2,7 @@
 
 <!-- Blog -->
 	<section class="box blog">
-		<h2 class="major"><span>Another Major Heading</span></h2>
+		<h2 class="major"><span>Blog Artikel</span></h2>
 		<div>
 			<div class="row">
 				<div class="12u 12u(mobile)">
@@ -14,7 +14,7 @@
 							<header>
 								<h3><a href="#">{{ post.title }}</a></h3>
 							</header>
-							<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+							<!--<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>--> <!-- TODO: add post.image -->
 							<p>{{ post.excerpt | truncate: 1000, '...' }}</p>
 							<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="button">Weiterlesen</a>
 						</article>

@@ -2,7 +2,7 @@
 layout    : default
 categories: [event, conference]
 date      : 2015-08-28 12:00:00
-expires   : 2015-09-11 20:00:00
+expires   : 2015-08-29 20:00:00
 title     : "solutions 2015"
 eventdate : "09.-11. September 2015"
 location  : "Hamburg"

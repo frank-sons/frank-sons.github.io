@@ -14,29 +14,18 @@
 
 			{% include navigation.html %}
 			
-			<!-- Main -->
+			<!-- Article Main -->
 			<div id="main-wrapper">
-					<div id="main" class="container">
-						<div class="row">
-							<div class="3u 12u(mobile)">
-								<div class="sidebar">
-
-									<!-- Sidebar -->
-									{% include contact/contact_sidebar.html %}
-
-								</div>
-							</div>
-							<div class="9u 12u(mobile) important(mobile)">
-								<div class="content content-right">
-
-									<!-- Content -->
-									{% include contact/contact_main.html %}
-
-								</div>
+				<div id="main" class="container">
+					<div class="row">
+						<div class="12u">
+							<div class="content">
+								{{ content }}
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
 
 			{% include footer.html %}
 

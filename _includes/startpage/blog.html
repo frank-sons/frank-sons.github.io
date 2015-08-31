@@ -15,8 +15,8 @@
 																<header>
 																	<h3><a href="#">{{ post.title }}</a></h3>
 																</header>
-																<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-																<p>{{ post.excerpt | strip_html | truncate: 1000, '...' }}</p>
+																<!--<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>-->
+																<p>{{ post.excerpt | truncate: 1000, '...' }}</p>
 																<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="button">Weiterlesen</a>
 															</article>
 															{% endfor %}
@@ -38,7 +38,7 @@
 																	<article class="box post-summary">
 																		<h3>
 																		{% if page.link != empty %}
-																			<a href="{{ post.link }}">{{ post.title }}</a>
+																			<a href="{{ site.url }}{{ site.baseurl }}{{ post.link }}">{{ post.title }}</a>
 																		{% else %}
 																			{{ post.title }}
 																		{% endif %}

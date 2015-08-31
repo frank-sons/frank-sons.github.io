@@ -1,7 +1,7 @@
 ---
 layout    : default
 categories: [event, conference]
-date      : 2015-08-29 12:00:00
+date      : 2015-09-05 12:00:00
 expires   : 2015-10-29 20:00:00
 title     : "International PHP conference 2015"
 eventdate : "25.-29. Oktober 2015"
