@@ -2074,7 +2074,8 @@
 
 				#banner p {
 					font-size: 1.35em;
-					margin: 0 0 1.25em 0;
+					margin: 0 8em 1.25em 8em;
+					text-align: left;;
 				}
 
 				#banner .button {
