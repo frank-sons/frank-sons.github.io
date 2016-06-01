@@ -12,7 +12,7 @@ author    : "Frank Sons"
 [1]: mailto:frank.sons@code-quality.de?subject=enterjs%202016
 [2]: https://www.enterjs.de
 
-Triff mich in Hamburg auf der [enterjs 2016!][2]
+Triff mich in Darmstadt auf der [enterjs 2016!][2]
 
 [Melde dich bei mir!][1]
 
