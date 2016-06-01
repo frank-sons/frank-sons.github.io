@@ -2,7 +2,7 @@
 layout    : default
 categories: [event, conference]
 date      : 2016-05-14 12:00:00
-expires   : 2016-06-34 20:00:00
+expires   : 2016-06-24 20:00:00
 title     : "Developer Week 2016"
 eventdate : "20.-23. Juni 2016"
 location  : "Nürnberg"
