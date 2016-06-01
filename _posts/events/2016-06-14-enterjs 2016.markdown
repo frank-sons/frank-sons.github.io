@@ -1,0 +1,19 @@
+---
+layout    : default
+categories: [event, conference]
+date      : 2016-05-14 12:00:00
+expires   : 2016-06-17 20:00:00
+title     : "enterJS 2016"
+eventdate : "14.-16. Juni 2016"
+location  : "Darmstadt"
+link      : https://www.enterjs.de
+author    : "Frank Sons"
+---
+[1]: mailto:frank.sons@code-quality.de?subject=enterjs%202016
+[2]: https://www.enterjs.de
+
+Triff mich in Hamburg auf der [enterjs 2016!][2]
+
+[Melde dich bei mir!][1]
+
+<!--more-->
