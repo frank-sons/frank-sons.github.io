@@ -11,7 +11,7 @@ excerpt_separator: <!--more-->
 
 # Serving
 baseurl: ""
-url    : "http://code-quality.de"
+url    : "https://code-quality.de"
 
 # Application
 version: "1.0.0"
